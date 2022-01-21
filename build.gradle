@@ -33,12 +33,11 @@ dependencies {
     // 버전을 명시하지 않아야 위의 springBootVersion 을 따라가게 됨.
     // 책엔 compile 로 되어 있으나 implementation으로 바꿨음. 버전 상 이제 후자를 권장하는 듯
     implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.projectlombok:lombok')
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    implementation('com.h2database:h2')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-}
-
-test {
-    useJUnitPlatform()
 }
