@@ -45,4 +45,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     testCompileOnly('org.springframework.security:spring-security-test')
+    testCompileOnly "org.projectlombok:lombok"
+    annotationProcessor('org.projectlombok:lombok')
+    testAnnotationProcessor('org.projectlombok:lombok')
 }
